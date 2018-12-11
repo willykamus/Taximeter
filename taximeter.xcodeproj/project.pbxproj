@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C7C51CB21B33C2E003171B2 /* Taximeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C51CA21B33C2E003171B2 /* Taximeter.m */; };
+		1C7C51CD21B33D8F003171B2 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C51CC21B33D8F003171B2 /* Math.m */; };
+		1C7C51D321B43A58003171B2 /* Passenger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C51D221B43A58003171B2 /* Passenger.m */; };
+		1C7C51D621B43C0D003171B2 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7C51D521B43C0D003171B2 /* Trip.m */; };
+		1CDB352321B5F830008477E4 /* Time.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB352221B5F830008477E4 /* Time.m */; };
+		1CE3FF7721B06DAE0028A5ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE3FF7621B06DAE0028A5ED /* main.m */; };
+		1CFCBB9D21B9783A003ED320 /* Taxi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFCBB9C21B9783A003ED320 /* Taxi.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1CE3FF7121B06DAD0028A5ED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1C7C51C521B33983003171B2 /* Taximeter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Taximeter.h; sourceTree = "<group>"; };
+		1C7C51C621B33AAE003171B2 /* Math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+		1C7C51CA21B33C2E003171B2 /* Taximeter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Taximeter.m; sourceTree = "<group>"; };
+		1C7C51CC21B33D8F003171B2 /* Math.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
+		1C7C51D121B4394C003171B2 /* Passenger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Passenger.h; sourceTree = "<group>"; };
+		1C7C51D221B43A58003171B2 /* Passenger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Passenger.m; sourceTree = "<group>"; };
+		1C7C51D421B43C0D003171B2 /* Trip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		1C7C51D521B43C0D003171B2 /* Trip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		1CDB352121B5F830008477E4 /* Time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
+		1CDB352221B5F830008477E4 /* Time.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Time.m; sourceTree = "<group>"; };
+		1CE3FF7321B06DAE0028A5ED /* taximeter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = taximeter; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE3FF7621B06DAE0028A5ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CFCBB9B21B9783A003ED320 /* Taxi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Taxi.h; sourceTree = "<group>"; };
+		1CFCBB9C21B9783A003ED320 /* Taxi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Taxi.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CE3FF7021B06DAD0028A5ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CE3FF6A21B06DAD0028A5ED = {
+			isa = PBXGroup;
+			children = (
+				1CE3FF7521B06DAE0028A5ED /* taximeter */,
+				1CE3FF7421B06DAE0028A5ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CE3FF7421B06DAE0028A5ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CE3FF7321B06DAE0028A5ED /* taximeter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CE3FF7521B06DAE0028A5ED /* taximeter */ = {
+			isa = PBXGroup;
+			children = (
+				1CFCBB9B21B9783A003ED320 /* Taxi.h */,
+				1CFCBB9C21B9783A003ED320 /* Taxi.m */,
+				1C7C51C521B33983003171B2 /* Taximeter.h */,
+				1C7C51CA21B33C2E003171B2 /* Taximeter.m */,
+				1CE3FF7621B06DAE0028A5ED /* main.m */,
+				1C7C51C621B33AAE003171B2 /* Math.h */,
+				1C7C51CC21B33D8F003171B2 /* Math.m */,
+				1C7C51D121B4394C003171B2 /* Passenger.h */,
+				1C7C51D221B43A58003171B2 /* Passenger.m */,
+				1CDB352121B5F830008477E4 /* Time.h */,
+				1CDB352221B5F830008477E4 /* Time.m */,
+				1C7C51D421B43C0D003171B2 /* Trip.h */,
+				1C7C51D521B43C0D003171B2 /* Trip.m */,
+			);
+			path = taximeter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CE3FF7221B06DAD0028A5ED /* taximeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE3FF7A21B06DAE0028A5ED /* Build configuration list for PBXNativeTarget "taximeter" */;
+			buildPhases = (
+				1CE3FF6F21B06DAD0028A5ED /* Sources */,
+				1CE3FF7021B06DAD0028A5ED /* Frameworks */,
+				1CE3FF7121B06DAD0028A5ED /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = taximeter;
+			productName = taximeter;
+			productReference = 1CE3FF7321B06DAE0028A5ED /* taximeter */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CE3FF6B21B06DAD0028A5ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "William Ching";
+				TargetAttributes = {
+					1CE3FF7221B06DAD0028A5ED = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 1CE3FF6E21B06DAD0028A5ED /* Build configuration list for PBXProject "taximeter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1CE3FF6A21B06DAD0028A5ED;
+			productRefGroup = 1CE3FF7421B06DAE0028A5ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CE3FF7221B06DAD0028A5ED /* taximeter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CE3FF6F21B06DAD0028A5ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C7C51D621B43C0D003171B2 /* Trip.m in Sources */,
+				1CE3FF7721B06DAE0028A5ED /* main.m in Sources */,
+				1CDB352321B5F830008477E4 /* Time.m in Sources */,
+				1C7C51CD21B33D8F003171B2 /* Math.m in Sources */,
+				1C7C51D321B43A58003171B2 /* Passenger.m in Sources */,
+				1C7C51CB21B33C2E003171B2 /* Taximeter.m in Sources */,
+				1CFCBB9D21B9783A003ED320 /* Taxi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1CE3FF7821B06DAE0028A5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1CE3FF7921B06DAE0028A5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1CE3FF7B21B06DAE0028A5ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CE3FF7C21B06DAE0028A5ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CE3FF6E21B06DAD0028A5ED /* Build configuration list for PBXProject "taximeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE3FF7821B06DAE0028A5ED /* Debug */,
+				1CE3FF7921B06DAE0028A5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE3FF7A21B06DAE0028A5ED /* Build configuration list for PBXNativeTarget "taximeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE3FF7B21B06DAE0028A5ED /* Debug */,
+				1CE3FF7C21B06DAE0028A5ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CE3FF6B21B06DAD0028A5ED /* Project object */;
+}
