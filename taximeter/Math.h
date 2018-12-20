@@ -10,11 +10,11 @@
 #define Math_h
 
 double power(double base,int exp);
-//-(int)power:(int)base exponent:(int)exp;
 double factorial(int num);
 double sine(double num);
 double cosine(double num);
 double tangent(double num);
 double absolute(double num);
+float randomNumber(float top , float bottom);
 
 #endif /* Math_h */

@@ -16,7 +16,7 @@ double power(double base,int exp){
     }
     return value;
 }
-//-(int)power:(int)base exponent:(int)exp;
+
 double factorial(int num){
     double value = 1;
     for(int i=2; i<=num; i++ )
@@ -38,9 +38,7 @@ double cosine(double num){
     return 1/sine(num);
 }
 double tangent(double num){
-//    double value;
-//    double sen = 1/cosene(num);
-//    value = sen/cosene(num);
+
     return sine(num)/cosine(num);
 }
 
@@ -51,16 +49,10 @@ double absolute(double num){
     return num;
 }
 
-
-//sine(double x){
-//    double ret = 0.0;
-//    for(int i = 1; i < 51; i+=2)
-//        if(i % 4 == 1)
-//            ret +=(pow(x,i))/(fact(i));
-//    else if(i % 4 == 3)
-//        ret -=(pow(x,i))/(fact(i));
-//    return ret
-//}
-
-//int n, m;
-//scanf("%dh%d", &h, &m)
+float randomNumber(float top , float bottom){
+    srand((unsigned int) time(0));
+    int num = rand();
+    //double number = bottom + num * (top-bottom);
+    float number =  fmod((bottom+num), top-bottom) + bottom;
+    return number;
+}

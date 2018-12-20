@@ -32,44 +32,5 @@
     return trips;
 }
 
-
-
-
-
-
-//-(void)setBalance:(double)money{
-//    balance = money;
-//}
-//-(double)getBalance{
-//    return balance;
-//}
-//-(NSMutableArray*)getTrips{
-//    return trips;
-//}
-//-(void)addTrip:(Trip*)trip{
-//    [trips addObject:trip];
-//}
-//
-//-(void)addFuel:(int)liters{
-//    self.fuel +=liters;
-//}
-//-(void)fuelReduction:(double)initialVelocity duration:(int)hours{
-//    fuel = fuel - (hours * absolute(tangent(initialVelocity*hours)) + absolute(cosene(initialVelocity)));
-//}
-//-(void)increaseMillage:(double)initialVelocity duration:(int)hours{
-//
-//    self.mileage = self.mileage + power(initialVelocity,hours*2) - (initialVelocity*hours);
-//
-//}
-
-//-(void)fuelWarning{
-//    if(fuel <= 0){
-//        NSLog(@"Warning, you run out of fuel");
-//        balance = balance - fuelFee;
-//    }else{
-//        NSLog(@"Remaining fuel: %f", fuel);
-//    }
-//}
-
 @end
 

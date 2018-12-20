@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(bool)fuelWarning;
 -(void)setTaximeter:(Taximeter*)taximtr;
 -(Taximeter*)getTaximeter;
+-(void)reFuel;
 @end
 
 NS_ASSUME_NONNULL_END

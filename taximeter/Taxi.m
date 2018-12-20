@@ -30,14 +30,16 @@
 -(void)mileageCalculation{
     Trip *lastTrip = [[taximeter getTrip]lastObject];
     mileages = mileages + power([lastTrip getInitialSpeed],2*([[lastTrip getPassenger]getTripLength]/60.0)) - (lastTrip.getInitialSpeed*([[lastTrip getPassenger]getTripLength]/60.0));
-    //NSLog(@"%lf",mileages);
 }
 -(void)fuelReduction{
     Trip *lastTrip = [[taximeter getTrip]lastObject];
-    fuel = fuel - ((lastTrip.getPassenger.getTripLength/60.0)*absolute(tangent(lastTrip.getInitialSpeed) * (lastTrip.getPassenger.getTripLength/60.0)) + absolute(cosine(lastTrip.getInitialSpeed)));
+    fuel = fuel - (([[lastTrip getPassenger]getTripLength]/60.0)*absolute(tangent([lastTrip getInitialSpeed]) * ([[lastTrip getPassenger]getTripLength]/60.0)) + absolute(cosine([lastTrip getInitialSpeed])));
+    if(fuel < 0){
+        fuel = 0;
+    }
 }
 -(bool)fuelWarning{
-    if(fuel <= 0){
+    if(fuel == 0){
         printf("Warning, you will run out of fuel during the trip\n");
         [taximeter setBalance:[taximeter getBalance] - 100];
         return false;
@@ -50,5 +52,19 @@
 }
 -(Taximeter*)getTaximeter{
     return taximeter;
+}
+
+-(void)reFuel{
+    double litres;
+    printf("Please insert the amount to refuel\n");
+    scanf("%lf",&litres);
+    float price = randomNumber(1.45, 1.15);
+    printf("Your fare at this time is: %f per litre\n", price);
+    if([[self getTaximeter]getBalance] < litres*price){
+        printf("Not enough funds for this operation\n");
+    }else{
+        [self setFuel:[self getFuel] + litres];
+        [[self getTaximeter]setBalance: [[self getTaximeter]getBalance] - litres*price];
+    }
 }
 @end

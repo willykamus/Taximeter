@@ -25,20 +25,23 @@
 }
 
 -(void)setCost{
-    int end = passenger.getEndTime.getHour*60 + passenger.getEndTime.getMinute;
     int start = passenger.getStartTime.getHour*60 + passenger.getStartTime.getMinute;
-    for(int i = start; i < end ; i++){
-        if(i >= 0 && i < 480){
+    for(int i = 0; i < [passenger getTripLength] ; i++){
+        
+        if(start >= 0 && start < 480){
             cost = cost + 30.0/60.0;
         }
-        if(i >= 480 && i < 840){
+        if(start >= 480 && start < 840){
             cost = cost + 20.0/60.0;
         }
-        if(i >= 840 && i < 1440){
+        if(start >= 840 && start < 1440){
             cost = cost + 25.0/60.0;
         }
-        if(i == 1440)
-            i=0;
+        if(start == 1439){
+            start=0;
+        }else{
+            start++;
+        }
     }
 }
 -(double)getCost{
