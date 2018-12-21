@@ -119,9 +119,11 @@ int main(int argc, const char * argv[]) {
                         [newTrip setCost];
                         //calculate mileage and add it to the total mileage
                         [taxi mileageCalculation];
+                        //add trip cost to balance
                         [[taxi getTaximeter]setBalance:[[taxi getTaximeter]getBalance] + [newTrip getCost]];
                     }else{
                         [taxi reFuel];
+                        //remove trip from trip array
                         [[[taxi getTaximeter]getTrip] removeLastObject];
                     }
                 }

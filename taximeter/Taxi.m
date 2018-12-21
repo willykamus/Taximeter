@@ -29,11 +29,11 @@
 }
 -(void)mileageCalculation{
     Trip *lastTrip = [[taximeter getTrip]lastObject];
-    mileages = mileages + power([lastTrip getInitialSpeed],2*([[lastTrip getPassenger]getTripLength]/60.0)) - (lastTrip.getInitialSpeed*([[lastTrip getPassenger]getTripLength]/60.0));
+    mileages = mileages + power([lastTrip getInitialSpeed],2*([[lastTrip getPassenger]getTripLength]/60.0)) - ([lastTrip getInitialSpeed]*([[lastTrip getPassenger]getTripLength]/60.0));
 }
 -(void)fuelReduction{
     Trip *lastTrip = [[taximeter getTrip]lastObject];
-    fuel = fuel - (([[lastTrip getPassenger]getTripLength]/60.0)*absolute(tangent([lastTrip getInitialSpeed]) * ([[lastTrip getPassenger]getTripLength]/60.0)) + absolute(cosine([lastTrip getInitialSpeed])));
+    fuel = fuel - (([[lastTrip getPassenger]getTripLength]/60.0) * fabs(tan([lastTrip getInitialSpeed] * [[lastTrip getPassenger]getTripLength]/60.0)) + fabs(cos([lastTrip getInitialSpeed])));
     if(fuel < 0){
         fuel = 0;
     }
@@ -60,6 +60,7 @@
     scanf("%lf",&litres);
     float price = randomNumber(1.45, 1.15);
     printf("Your fare at this time is: %f per litre\n", price);
+    printf("Total cost of refuel: %f \n", litres*price);
     if([[self getTaximeter]getBalance] < litres*price){
         printf("Not enough funds for this operation\n");
     }else{

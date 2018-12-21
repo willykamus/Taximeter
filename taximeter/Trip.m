@@ -25,7 +25,7 @@
 }
 
 -(void)setCost{
-    int start = passenger.getStartTime.getHour*60 + passenger.getStartTime.getMinute;
+    int start = [[passenger getStartTime]getHour]*60 + [[passenger getStartTime]getMinute];
     for(int i = 0; i < [passenger getTripLength] ; i++){
         
         if(start >= 0 && start < 480){

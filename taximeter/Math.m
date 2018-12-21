@@ -23,6 +23,7 @@ double factorial(int num){
         value *= i;
     return value;
 }
+// Even thought it is the formula, I could not make ir work for number larger than 20
 double sine(double num){
     double value = 0.0;
     for(int i = 1; i < 51; i+=2){
@@ -33,12 +34,19 @@ double sine(double num){
     }
     return value;
 }
-
+// Even thought it is the formula, I could not make ir work for number larger than 20
 double cosine(double num){
-    return 1/sine(num);
+    double value = 1.0;
+    for(int i = 2; i < 52; i+=2){
+        if(i % 4 == 0)
+            value +=(power(num, i))/(factorial(i));
+        else if(i % 4 == 2)
+            value -=(power(num, i))/(factorial(i));
+    }
+    printf("%lf\n",value);
+    return value;
 }
 double tangent(double num){
-
     return sine(num)/cosine(num);
 }
 
@@ -52,7 +60,6 @@ double absolute(double num){
 float randomNumber(float top , float bottom){
     srand((unsigned int) time(0));
     int num = rand();
-    //double number = bottom + num * (top-bottom);
     float number =  fmod((bottom+num), top-bottom) + bottom;
     return number;
 }
